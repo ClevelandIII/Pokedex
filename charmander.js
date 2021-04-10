@@ -67,3 +67,21 @@ let charmander = {
     ],
     "weight": 85
 }
+
+let header = document.getElementById("header");
+let section = document.getElementById("section");
+
+let superObj = JSON.parse(charmander);
+
+createHeader(superObj);
+createSection(superObj);
+
+function createHeader(obj) {
+    const H1 = document.createElement("h1");
+    H1.textContent = obj.name
+    header.appendChild(H1);
+
+    const PARA = document.createElement("p")
+    PARA.textContent = `base Exprience: ${obj["base_experience"]} || height: ${obj["height"]} || id: ${obj["id"]} is_default ${obj["is_default"]} ordeer: ${obj["order"]}`
+    header.appendChild(PARA);
+}
