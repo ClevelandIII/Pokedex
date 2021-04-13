@@ -1,5 +1,6 @@
 # POKEDEX
 
+4-9-2021
 Jimmy did index.html & scss & home.js
 Cleveland did charmander.js and html and scss
 Isaac did Charmeleon.js and html
