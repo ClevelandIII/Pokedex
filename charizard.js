@@ -92,7 +92,7 @@ function createHeader(obj) {
     header.appendChild(H1);
 
     const PARA = document.createElement("p")
-    PARA.textContent = `base exprience: ${obj["base_experience"]} || height: ${obj["height"]} || id: ${obj["id"]} is_default ${obj["is_default"]} order: ${obj["order"]} weight: ${obj["weight"]}`
+    PARA.textContent = `base exprience: ${obj["base_experience"]} || height: ${obj["height"]} || id: ${obj["id"]} ||default: ${obj["is_default"]} || order: ${obj["order"]} || weight: ${obj["weight"]}`
     header.appendChild(PARA);
 }
 
@@ -131,11 +131,10 @@ function createSection2(obj) {
         P3.textContent = `stat:`
 
         const ESTATS = STATS[stat]["stat"];
-        for (estat in ESTATS) {
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${ESTATS[estat]["name"]}`
-            LIST.appendChild(ITEM);
-        }
+
+        const ITEM = document.createElement("li");
+        ITEM.textContent = `name: ${ESTATS["name"]}`
+        LIST.appendChild(ITEM);
 
         ARTICLE.appendChild(P1)
         ARTICLE.appendChild(P2)
@@ -153,23 +152,19 @@ function createSection3(obj) {
         const ARTICLE = document.createElement("article")
         const P1 = document.createElement("p")
         const P2 = document.createElement("p")
-        const P3 = document.createElement("p")
         const LIST = document.createElement("ul")
 
         P1.textContent = `slot: ${TYPES[type]["slot"]}`
-        P2.textContent = `type: ${TYPES[type]["type"]}`
-        P3.textContent = `name:`
+        P2.textContent = `type:`
 
-        const NAME = TYPES[type]["stat"];
-        for (type in NAME) {
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${NAME[type]["name"]}`
-            LIST.appendChild(ITEM);
-        }
+        const NAME = TYPES[type]["type"];
+
+        const ITEM = document.createElement("li");
+        ITEM.textContent = `name: ${NAME["name"]}`
+        LIST.appendChild(ITEM);
 
         ARTICLE.appendChild(P1)
         ARTICLE.appendChild(P2)
-        ARTICLE.appendChild(P3)
         ARTICLE.appendChild(LIST)
 
         section3.appendChild(ARTICLE)
