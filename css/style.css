@@ -3,12 +3,8 @@ header {
   color: gray;
 }
 
-section p {
+section {
   text-align: center;
-  -webkit-box-pack: space-between 10px;
-      -ms-flex-pack: space-between 10px;
-          justify-content: space-between 10px;
-  padding-top: 10px;
 }
 
 img {
@@ -16,7 +12,6 @@ img {
   width: 500px;
   border: solid 10px yellow;
   background-color: darkred;
-  float: left;
 }
 
 body {
