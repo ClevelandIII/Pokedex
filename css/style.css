@@ -19,7 +19,8 @@ img {
 }
 
 body {
-  background-color: red;
-  height: 50%;
+  background-image: url("pokebackground.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 /*# sourceMappingURL=style.css.map */
