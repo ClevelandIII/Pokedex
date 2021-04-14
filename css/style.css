@@ -1,36 +1,25 @@
-/*function createSection(obj) {
-    const MOTHERS = obj["cats"];
+header {
+  text-align: center;
+}
 
-    for (mom in MOTHERS) {
-        const ARTICLE = document.createElement("article")
-        const H2 = document.createElement("h2")
-        const P1 = document.createElement("p")
-        const P2 = document.createElement("p")
-        const P3 = document.createElement("p")
-        const LIST = document.createElement("ul")
+section p {
+  text-align: center;
+  -webkit-box-pack: space-between 10px;
+      -ms-flex-pack: space-between 10px;
+          justify-content: space-between 10px;
+  padding-top: 10px;
+}
 
-        H2.textContent = MOTHERS[mom]["name"];
-        P1.textContent = `breed: ${MOTHERS[mom]["breed"]}`
-        P2.textContent = `color: ${MOTHERS[mom]["color"]}`
-        P3.textContent = `Kittens:`
+img {
+  height: 500px;
+  width: 500px;
+  border: solid 10px yellow;
+  background-color: darkred;
+  float: left;
+}
 
-        const KITTENS = MOTHERS[mom]["kittens"];
-        for (kitts in KITTENS) {
-            const ITEM = document.createElement("li");
-            const ITEM2 = document.createElement("li");
-            ITEM.textContent = `name: ${KITTENS[kitts]["name"]}`
-            ITEM2.textContent = `gender: ${KITTENS[kitts]["gender"]}`
-            LIST.appendChild(ITEM);
-            LIST.appendChild(ITEM2);
-        }
-
-        ARTICLE.appendChild(H2)
-        ARTICLE.appendChild(P1)
-        ARTICLE.appendChild(P2)
-        ARTICLE.appendChild(P3)
-        ARTICLE.appendChild(LIST)
-
-        section.appendChild(ARTICLE)
-    }
-}*/
+body {
+  background-color: red;
+  height: 50%;
+}
 /*# sourceMappingURL=style.css.map */
