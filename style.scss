@@ -4,12 +4,8 @@ header{
 }
 
 section{
-    p{
-        
-        text-align: center;
-        justify-content: space-between 10px;
-        padding-top: 10px
-    }
+    text-align: center;
+
 }
 
 
@@ -18,10 +14,4 @@ img{
     width: 500px;
     border: solid 10px yellow;
     background-color: darkred;
-    float: left;
-}
-
-body{
-    background-color: red;
-    height: 50%;
 }
