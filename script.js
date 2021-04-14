@@ -4,7 +4,7 @@ let page;
 path = path.split("/")
 console.log(path)
 for(i in path){
-    page = (path[9])
+    page = path[path.length - 1]
 }
 
 //////////////////////////////////////////////////////////////////////CHARMANDER
