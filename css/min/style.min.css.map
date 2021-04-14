@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../../Pokedex/style.scss"
+        "../../style.scss"
     ],
     "names": [],
     "file": "style.min.css"
