@@ -1,5 +1,6 @@
 header {
   text-align: center;
+  color: gray;
 }
 
 section p {
@@ -19,7 +20,13 @@ img {
 }
 
 body {
-  background-color: red;
-  height: 50%;
+  background-image: url("pokebackground.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  padding: 25% 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

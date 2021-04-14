@@ -1,2 +1,2 @@
-header{text-align:center}section p{text-align:center;-webkit-box-pack:space-between 10px;-ms-flex-pack:space-between 10px;justify-content:space-between 10px;padding-top:10px}img{height:500px;width:500px;border:solid 10px yellow;background-color:darkred;float:left}body{background-color:red;height:50%}
+header{text-align:center;color:gray}section p{text-align:center;-webkit-box-pack:space-between 10px;-ms-flex-pack:space-between 10px;justify-content:space-between 10px;padding-top:10px}img{height:500px;width:500px;border:solid 10px yellow;background-color:darkred;float:left}body{background-image:url("pokebackground.png");background-repeat:no-repeat;background-size:100%}.container{padding:25% 0;text-align:center}
 /*# sourceMappingURL=style.min.css.map */
