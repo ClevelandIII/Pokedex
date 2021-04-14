@@ -1,6 +1,6 @@
 header{
     text-align: center;
-    
+    color: gray;
 }
 
 section{
@@ -25,4 +25,9 @@ body{
     background-image: url("pokebackground.png");
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.container{
+    padding: 25% 0;
+    text-align: center;
 }
