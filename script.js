@@ -2,7 +2,7 @@ let path = window.location.pathname
 let page;
 path = path.split("/")
 for(i in path){
-    page = (path[7])
+    page = path[path.length - 1]
 }
 
 //////////////////////////////////////////////////////////////////////CHARMANDER
