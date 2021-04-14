@@ -1,6 +1,6 @@
 header{
     text-align: center;
-    
+    color: gray;
 }
 
 section{
@@ -14,4 +14,15 @@ img{
     width: 500px;
     border: solid 10px yellow;
     background-color: darkred;
+}
+
+body{
+    background-image: url("pokebackground.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container{
+    padding: 25% 0;
+    text-align: center;
 }
