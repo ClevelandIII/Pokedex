@@ -10,3 +10,4 @@ Hayden did Charizard.js and html
 Jimmy worked on an alternate version of the homepage
 Cleveland made the JS files into one, and remodled the html to work with one js
 Issac added to the scss
+Hayden tried to format the js like the example we have
