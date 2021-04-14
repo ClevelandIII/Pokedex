@@ -1,8 +1,10 @@
 let path = window.location.pathname
+console.log(path)
 let page;
 path = path.split("/")
+console.log(path)
 for(i in path){
-    page = (path[7])
+    page = (path[9])
 }
 
 //////////////////////////////////////////////////////////////////////CHARMANDER
