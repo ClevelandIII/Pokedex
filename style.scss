@@ -1,245 +1,35 @@
-/*function createSection(obj) {
-    const MOTHERS = obj["cats"];
-
-    for (mom in MOTHERS) {
-        const ARTICLE = document.createElement("article")
-        const H2 = document.createElement("h2")
-        const P1 = document.createElement("p")
-        const P2 = document.createElement("p")
-        const P3 = document.createElement("p")
-        const LIST = document.createElement("ul")
-
-        H2.textContent = MOTHERS[mom]["name"];
-        P1.textContent = `breed: ${MOTHERS[mom]["breed"]}`
-        P2.textContent = `color: ${MOTHERS[mom]["color"]}`
-        P3.textContent = `Kittens:`
-
-        const KITTENS = MOTHERS[mom]["kittens"];
-        for (kitts in KITTENS) {
-            const ITEM = document.createElement("li");
-            const ITEM2 = document.createElement("li");
-            ITEM.textContent = `name: ${KITTENS[kitts]["name"]}`
-            ITEM2.textContent = `gender: ${KITTENS[kitts]["gender"]}`
-            LIST.appendChild(ITEM);
-            LIST.appendChild(ITEM2);
-        }
-
-        ARTICLE.appendChild(H2)
-        ARTICLE.appendChild(P1)
-        ARTICLE.appendChild(P2)
-        ARTICLE.appendChild(P3)
-        ARTICLE.appendChild(LIST)
-
-        section.appendChild(ARTICLE)
-    }
-}*/
-
-
-.slideshow {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: var(--Slideshow-Height);
-    overflow: hidden;
-}
-
-.slideshow .slider {
-    width: 100vw;
-    height: var(--Slideshow-Height);
-    z-index: 2;
-}
-
-.slideshow .slider * {
-    outline: none;
-}
-
-.slideshow .slider .item {
-    height: var(--Slideshow-Height);
-    width: 100vw;
-    position: relative;
-    overflow: hidden;
-    border: none;
-}
-
-.slideshow .slider .item .text {
-    display: none;
-}
-
-.slideshow .slider .item img {
-    min-width: 101%;
-    min-height: 101%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.slideshow .slick-dots {
-    position: fixed;
-    z-index: 100;
-    width: 40px;
-    bottom: auto;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    left: auto;
-    color: #fff;
-    display: block;
-}
-
-.slideshow .slick-dots li {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.slideshow .slick-dots li button {
-    position: relative;
-    width: 20px;
-    height: 15px;
+header{
     text-align: center;
+    color: gray;
 }
 
-.slideshow .slick-dots li button:before {
-    content: '';
-    background: #fff;
-    color: #fff;
-    height: 2px;
-    width: 20px;
-    border-radius: 0;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: auto;
-    transform: translateY(-50%);
-    transition: all 0.3s ease-in-out;
-    opacity: 0.6;
-}
-
-.slideshow .slick-dots li.slick-active button:before {
-    width: 40px;
-    opacity: 1;
-}
-
-.slideshow.slideshow-right {
-    left: 0;
-    z-index: 1;
-    width: 50vw;
-    pointer-events: none;
-}
-
-.slideshow.slideshow-right .slider {
-    left: 0;
-    position: absolute;
-}
-
-.slideshow-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 50vh;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    font-size: 70px;
-    width: 100vw;
-    text-align: center;
-    color: var(--White-Text-Color);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 100px;
-    pointer-events: none;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    line-height: 1;
-}
-
-.slideshow-text a {
-    text-align: center;
-    width: fit-content;
-    color: var(--White-Text-Color);
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    pointer-events: auto;
-    text-shadow: 0px 2px 5px black;
-    letter-spacing: 5;
-}
-
-.slideshow-text p {
-    color: var(--White-Text-Color);
-    text-shadow: 0px 2px 5px black;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 8;
-    font-size: 15px;
-    text-transform: uppercase;
-    line-height: .99;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    pointer-events: none;
-    text-align: center;
-    height: fit-content;
-    margin: 10px;
-    letter-spacing: 1;
-    word-spacing: 2;
-}
-
-@media (max-width: 767px) {
-    .slideshow-text {
-        font-size: 40px;
+section{
+    p{
+        
+        text-align: center;
+        justify-content: space-between 10px;
+        padding-top: 10px
     }
 }
 
-.the-most {
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    width: 50vw;
-    max-width: 200px;
-    padding: 10px;
-}
 
-.the-most img {
-    max-width: 100%;
-}
-
-
-/*#top,
-#bottom {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    height: 100%;
-}
-
-#top {
-    top: 50%;
-    background-color: red;
-}
-
-#bottom {
-    bottom: 50%;
-    background-color: white;
-}*/
-
-
-//body {
-//    background-image: linear-gradient(to top, red 50%, white 50%);
-//    min-height: 100vh;
-//    background-repeat: round;
-//}
-
-a{
-    text-align: center;
-    padding: 0px;
+img{
+    height: 500px;
+    width: 500px;
+    border: solid 10px yellow;
+    background-color: darkred;
+    float: left;
 }
 
 body{
-    background-image: url(https://th.bing.com/th/id/Rd74a209752e830c02e472d3dd35d88b3?rik=v4MZvBwzAOFJpg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fxLZrFev.png&ehk=VR8MrXXVVeLHAyllxPpuFqyq4e6mAa1%2bZdE2kqXUQx0%3d&risl=&pid=ImgRaw);
+    background-image: url("pokebackground.png");
+    background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.container{
+    padding: 25% 0;
+    text-align: center;
 }
 
 
@@ -247,46 +37,45 @@ body{
 
 
 
-//body{
-//    background-position: initial;
-//    background-image: url(https://th.bing.com/th/id/Rd74a209752e830c02e472d3dd35d88b3?rik=v4MZvBwzAOFJpg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fxLZrFev.png&ehk=VR8MrXXVVeLHAyllxPpuFqyq4e6mAa1%2bZdE2kqXUQx0%3d&risl=&pid=ImgRaw);
-//}
 
 
 
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
 
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
 
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .flip-card-back {
+    background-color: red;
+    color: white;
+    transform: rotateY(180deg);
+  }
