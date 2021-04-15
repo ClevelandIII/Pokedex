@@ -1,6 +1,8 @@
 let path = window.location.pathname
+console.log(path)
 let page;
 path = path.split("/")
+console.log(path)
 for(i in path){
     page = path[path.length - 1]
 }
