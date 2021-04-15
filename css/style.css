@@ -10,8 +10,6 @@ section {
 img {
   height: 500px;
   width: 500px;
-  border: solid 10px yellow;
-  background-color: darkred;
 }
 
 body {
@@ -21,7 +19,7 @@ body {
 }
 
 .container {
-  padding: 25% 0;
+  padding: 0% 0;
   text-align: center;
 }
 
@@ -29,7 +27,6 @@ body {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  border: 1px solid #f1f1f1;
 }
 
 .flip-card-inner {
