@@ -3,10 +3,6 @@ header {
   color: gray;
 }
 
-section {
-  text-align: center;
-}
-
 img {
   height: 500px;
   width: 500px;
@@ -21,7 +17,7 @@ body {
 }
 
 .container {
-  padding: 25% 0;
-  text-align: center;
+  padding: 8% 0;
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */
