@@ -52,15 +52,7 @@ body {
   height: 100%;
 }
 
-#one {
-  border: 2px solid black;
-}
-
-#two {
-  border: 2px solid black;
-}
-
-#three {
-  border: 2px solid black;
+.container {
+  margin-top: 15%;
 }
 /*# sourceMappingURL=style.css.map */
