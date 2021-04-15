@@ -22,7 +22,11 @@ body{
     background-size: 100%;
 }
 
-.containerA{
-    padding: 25% 0;
-    text-align: center;
+#buh{
+    background-image: url("pokeback.jpg");
+    background-size: 100%;
+    &:hover{
+        background-image: url("charmanderS.png");
+        background-size: 100%;
+    }
 }

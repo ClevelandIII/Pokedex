@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-header{text-align:center;color:gray}section p{text-align:center;-webkit-box-pack:space-between 10px;-ms-flex-pack:space-between 10px;justify-content:space-between 10px;padding-top:10px}img{height:500px;width:500px;border:solid 10px yellow;background-color:darkred;float:left}body{background-image:url("pokebackground.png");background-repeat:no-repeat;background-size:100%}.containerA{padding:25% 0;text-align:center}
-=======
-header{text-align:center;color:gray}section{text-align:center}img{height:500px;width:500px;border:solid 10px yellow;background-color:darkred}body{background-image:url("pokebackground.png");background-repeat:no-repeat;background-size:100%}.container{padding:25% 0;text-align:center}
->>>>>>> 615878271f29df4aea0e3d0036b8a068c84bbf55
+header{text-align:center;color:gray}section{text-align:center}img{height:500px;width:500px;border:solid 10px yellow;background-color:darkred}body{background-image:url("pokebackground.png");background-repeat:no-repeat;background-size:100%}#buh{background-image:url("pokeback.jpg");background-size:100%}#buh:hover{background-image:url("charmanderS.png");background-size:100%}
 /*# sourceMappingURL=style.min.css.map */
