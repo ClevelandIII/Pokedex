@@ -21,12 +21,3 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
-#buh{
-    background-image: url("pokeback.jpg");
-    background-size: 100%;
-    &:hover{
-        background-image: url("charmanderS.png");
-        background-size: 100%;
-    }
-}

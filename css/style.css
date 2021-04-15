@@ -26,6 +26,8 @@ body {
 }
 
 #buh:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   background-image: url("charmanderS.png");
   background-size: 100%;
 }
