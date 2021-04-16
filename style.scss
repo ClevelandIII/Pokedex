@@ -45,6 +45,28 @@ body {
     height: 100%;
 }
 
-.container{
+.container {
     margin-top: 15%;
+}
+
+a {
+    &:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:active {
+        text-decoration: none;
+        color: black;
+    }
 }
