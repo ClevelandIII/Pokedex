@@ -52,15 +52,27 @@ body {
   height: 100%;
 }
 
-#one {
-  border: 2px solid black;
+.container {
+  margin-top: 15%;
 }
 
-#two {
-  border: 2px solid black;
+a:link {
+  text-decoration: none;
+  color: black;
 }
 
-#three {
-  border: 2px solid black;
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

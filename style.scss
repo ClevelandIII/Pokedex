@@ -45,12 +45,28 @@ body {
     height: 100%;
 }
 
-#one {
-    border: 2px solid black;
+.container {
+    margin-top: 15%;
 }
-#two {
-    border: 2px solid black;
-}
-#three {
-    border: 2px solid black;
+
+a {
+    &:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    &:active {
+        text-decoration: none;
+        color: black;
+    }
 }
