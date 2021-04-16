@@ -98,7 +98,7 @@ if(page == "charmander.html"){
         header.appendChild(H1);
     
         const PARA = document.createElement("p")
-        PARA.textContent = `base exprience: ${obj["base_experience"]} || height: ${obj["height"]} || id: ${obj["id"]} ||default: ${obj["is_default"]} || order: ${obj["order"]} || weight: ${obj["weight"]}`
+        PARA.textContent = `base exprience: ${obj["base_experience"]}, height: ${obj["height"]}, id: ${obj["id"]}, default: ${obj["is_default"]}, order: ${obj["order"]}, weight: ${obj["weight"]}`
         header.appendChild(PARA);
     }
     
@@ -269,7 +269,7 @@ if(page == "charmeleon.html"){
         header.appendChild(H1);
     
         const PARA = document.createElement("p")
-        PARA.textContent = `base exprience: ${obj["base_experience"]} || height: ${obj["height"]} || id: ${obj["id"]} ||default: ${obj["is_default"]} || order: ${obj["order"]} || weight: ${obj["weight"]}`
+        PARA.textContent = `base exprience: ${obj["base_experience"]}, height: ${obj["height"]}, id: ${obj["id"]}, default: ${obj["is_default"]}, order: ${obj["order"]}, weight: ${obj["weight"]}`
         header.appendChild(PARA);
     }
     
@@ -446,7 +446,7 @@ if(page == "charizard.html"){
         header.appendChild(H1);
     
         const PARA = document.createElement("p")
-        PARA.textContent = `base exprience: ${obj["base_experience"]} || height: ${obj["height"]} || id: ${obj["id"]} ||default: ${obj["is_default"]} || order: ${obj["order"]} || weight: ${obj["weight"]}`
+        PARA.textContent = `base exprience: ${obj["base_experience"]}, height: ${obj["height"]}, id: ${obj["id"]}, default: ${obj["is_default"]}, order: ${obj["order"]}, weight: ${obj["weight"]}`
         header.appendChild(PARA);
     }
     
