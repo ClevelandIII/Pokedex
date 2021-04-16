@@ -3,7 +3,7 @@ console.log(path)
 let page;
 path = path.split("/")
 console.log(path)
-for(i in path){
+for (i in path) {
     page = path[path.length - 1]
 }
 
@@ -83,14 +83,12 @@ if (page == "charmander.html") {
     let header = document.getElementById("headerCMD");
     let section1 = document.getElementById("section1CMD");
     let section2 = document.getElementById("section2CMD");
-    let section3 = document.getElementById("section3CMD");
 
     let superObj = charmander;
 
     createHeader(superObj);
     createSection1(superObj);
     createSection2(superObj);
-    createSection3(superObj);
 
     function createHeader(obj) {
         const H1 = document.createElement("h1");
@@ -119,6 +117,30 @@ if (page == "charmander.html") {
             ARTICLE.appendChild(LIST)
 
             section1.appendChild(ARTICLE)
+
+            const TYPES = obj["types"];
+
+            for (type in TYPES) {
+                const ARTICLE = document.createElement("article")
+                const P1 = document.createElement("p")
+                const P2 = document.createElement("p")
+                const LIST = document.createElement("ul")
+
+                P1.textContent = `slot: ${TYPES[type]["slot"]}`
+                P2.textContent = `type:`
+
+                const NAME = TYPES[type]["type"];
+
+                const ITEM = document.createElement("li");
+                ITEM.textContent = `name: ${NAME["name"]}`
+                LIST.appendChild(ITEM);
+
+                ARTICLE.appendChild(P1)
+                ARTICLE.appendChild(P2)
+                ARTICLE.appendChild(LIST)
+
+                section1.appendChild(ARTICLE)
+            }
         }
     }
 
@@ -348,15 +370,6 @@ if (page == "charmeleon.html") {
         }
     }
 }
-
-const  { name:n, stats:newStats, abilities:abils, id, ...others } = charmeleon
-console.log(n)
-console.log(newStats)
-console.log(abils)
-console.log(id)
-console.log(others)
-
-
 
 //////////////////////////////////////////////////////////////////////CHARIZARD
 
