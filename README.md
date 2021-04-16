@@ -14,3 +14,9 @@ Issac added to the scss
 4-14-2021
 Jimmy & Hayden & Issac made the flip on the homepage
 Cleveland worked on the alternate flip (unused)
+
+4-15-2021
+Jimmy worked on the homepage
+Cleveland worked on the homepage and the pokemon
+Issac worked on the pokemon
+Hayden worked on the homepage
