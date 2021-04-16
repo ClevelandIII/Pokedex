@@ -4,13 +4,26 @@ header {
 
 }
 
-section {
-    text-align: center;
+
+.section1CMO{
+    color: gray;
+  li{
+      display: inline-block;
+  }
+}
+.section2CMO{
+    color: red;
+   list-style-type: none;
 }
 
+.section3CMO{
+    color: blue;
+    
+}
 img {
     height: 500px;
     width: 500px;
+    
 }
 
 body {

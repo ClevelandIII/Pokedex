@@ -3,8 +3,21 @@ header {
   color: gray;
 }
 
-section {
-  text-align: center;
+.section1CMO {
+  color: gray;
+}
+
+.section1CMO li {
+  display: inline-block;
+}
+
+.section2CMO {
+  color: red;
+  list-style-type: none;
+}
+
+.section3CMO {
+  color: blue;
 }
 
 img {
