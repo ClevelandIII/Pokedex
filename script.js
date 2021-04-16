@@ -534,3 +534,5 @@ if (page == "charizard.html") {
         }
     }
 }
+
+
