@@ -1,3 +1,7 @@
+html {
+  font-family: 'Press Start 2P', cursive;
+}
+
 img {
   height: 500px;
   width: 500px;
@@ -7,6 +11,7 @@ body {
   background-image: url("pokebackground.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .flip-card {
@@ -26,6 +31,7 @@ body {
   transition: transform 0.8s, -webkit-transform 0.8s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -40,7 +46,9 @@ body {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
+.flip-card-front p {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -55,6 +63,11 @@ body {
 .container {
   margin-top: 15%;
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+a {
+  font-family: 'Press Start 2P', cursive;
 }
 
 a:link {
@@ -74,10 +87,12 @@ a:active {
 }
 
 .containerA {
-  color: #4e4e4e;
   text-align: center;
   margin-top: 4%;
   margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #img {
@@ -85,11 +100,16 @@ a:active {
   background-color: orange;
 }
 
-#section2CMD, #section2CMO, #section2CIZ {
-  font-size: 10px;
+#text {
+  border: 2px solid black;
+  background-color: orange;
 }
 
 #hr {
   border: 2px solid black;
+}
+
+ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
