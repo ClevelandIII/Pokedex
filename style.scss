@@ -8,6 +8,13 @@ img {
     
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
 body {
     background-image: url("pokebackground.png");
     background-repeat: no-repeat;
