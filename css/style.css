@@ -111,6 +111,8 @@ a:active {
 #img {
   border: 2px solid black;
   background-color: orange;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e25822), color-stop(orange), to(#e2b822));
+  background: linear-gradient(#e25822, orange, #e2b822);
 }
 
 #text {
