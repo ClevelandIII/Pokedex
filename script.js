@@ -6,6 +6,8 @@ console.log(path)
 for (i in path) {
     page = path[path.length - 1]
 }
+let loop = 1;
+let loop2 = 1;
 
 //////////////////////////////////////////////////////////////////////CHARMANDER
 
@@ -83,12 +85,14 @@ if (page == "charmander.html") {
     let header = document.getElementById("headerCMD");
     let section1 = document.getElementById("section1CMD");
     let section2 = document.getElementById("section2CMD");
+    let section3 = document.getElementById("section3CMD");
 
     let superObj = charmander;
 
     createHeader(superObj);
     createSection1(superObj);
     createSection2(superObj);
+    createSection3(superObj);
 
     function createHeader(obj) {
         const H1 = document.createElement("h1");
@@ -105,42 +109,19 @@ if (page == "charmander.html") {
 
         for (ability in ABILITIES) {
             const ARTICLE = document.createElement("article")
-            const H2 = document.createElement("h2")
             const P1 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const P2 = document.createElement("p")
 
-            H2.textContent = ABILITIES[ability]["abilities"];
-            P1.textContent = `abilities: ${ABILITIES[ability]["name"]}`
+            P2.textContent = `ABILITY ${loop}`
+            loop++;
 
-            ARTICLE.appendChild(H2)
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `name: ${ABILITIES[ability]["name"]}`
+            P2.appendChild(ITEM);
+
             ARTICLE.appendChild(P1)
-            ARTICLE.appendChild(LIST)
-
+            ARTICLE.appendChild(P2)
             section1.appendChild(ARTICLE)
-
-            const TYPES = obj["types"];
-
-            for (type in TYPES) {
-                const ARTICLE = document.createElement("article")
-                const P1 = document.createElement("p")
-                const P2 = document.createElement("p")
-                const LIST = document.createElement("ul")
-
-                P1.textContent = `slot: ${TYPES[type]["slot"]}`
-                P2.textContent = `type:`
-
-                const NAME = TYPES[type]["type"];
-
-                const ITEM = document.createElement("li");
-                ITEM.textContent = `name: ${NAME["name"]}`
-                LIST.appendChild(ITEM);
-
-                ARTICLE.appendChild(P1)
-                ARTICLE.appendChild(P2)
-                ARTICLE.appendChild(LIST)
-
-                section1.appendChild(ARTICLE)
-            }
         }
     }
 
@@ -152,22 +133,22 @@ if (page == "charmander.html") {
             const P1 = document.createElement("p")
             const P2 = document.createElement("p")
             const P3 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const BR = document.createElement("br")
 
-            P1.textContent = `base stat: ${STATS[stat]["base_stat"]}`
-            P2.textContent = `effort: ${STATS[stat]["effort"]}`
-            P3.textContent = `stat:`
+            P1.textContent = `Stat ${loop2}`
+            P2.textContent = `Base Stat: ${STATS[stat]["base_stat"]}, Effort: ${STATS[stat]["effort"]}`
+            loop2++;
 
             const ESTATS = STATS[stat]["stat"];
 
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${ESTATS["name"]}`
-            LIST.appendChild(ITEM);
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `Stat: ${ESTATS["name"]}`
+            P3.appendChild(ITEM);
 
             ARTICLE.appendChild(P1)
             ARTICLE.appendChild(P2)
             ARTICLE.appendChild(P3)
-            ARTICLE.appendChild(LIST)
+            ARTICLE.appendChild(BR)
 
             section2.appendChild(ARTICLE)
         }
@@ -180,20 +161,20 @@ if (page == "charmander.html") {
             const ARTICLE = document.createElement("article")
             const P1 = document.createElement("p")
             const P2 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const P3 = document.createElement("p")
 
-            P1.textContent = `slot: ${TYPES[type]["slot"]}`
-            P2.textContent = `type:`
+            P1.textContent = `Type 1`
+            P2.textContent = `slot: ${TYPES[type]["slot"]}`
 
             const NAME = TYPES[type]["type"];
 
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${NAME["name"]}`
-            LIST.appendChild(ITEM);
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `type: ${NAME["name"]}`
+            P3.appendChild(ITEM);
 
             ARTICLE.appendChild(P1)
             ARTICLE.appendChild(P2)
-            ARTICLE.appendChild(LIST)
+            ARTICLE.appendChild(P3)
 
             section3.appendChild(ARTICLE)
         }
@@ -300,17 +281,18 @@ if (page == "charmeleon.html") {
 
         for (ability in ABILITIES) {
             const ARTICLE = document.createElement("article")
-            const H2 = document.createElement("h2")
             const P1 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const P2 = document.createElement("p")
 
-            H2.textContent = ABILITIES[ability]["abilities"];
-            P1.textContent = `abilities: ${ABILITIES[ability]["name"]}`
+            P2.textContent = `ABILITY ${loop}`
+            loop++;
 
-            ARTICLE.appendChild(H2)
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `name: ${ABILITIES[ability]["name"]}`
+            P2.appendChild(ITEM);
+
             ARTICLE.appendChild(P1)
-            ARTICLE.appendChild(LIST)
-
+            ARTICLE.appendChild(P2)
             section1.appendChild(ARTICLE)
         }
     }
@@ -323,22 +305,22 @@ if (page == "charmeleon.html") {
             const P1 = document.createElement("p")
             const P2 = document.createElement("p")
             const P3 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const BR = document.createElement("br")
 
-            P1.textContent = `base stat: ${STATS[stat]["base_stat"]}`
-            P2.textContent = `effort: ${STATS[stat]["effort"]}`
-            P3.textContent = `stat:`
+            P1.textContent = `Stat ${loop2}`
+            P2.textContent = `Base Stat: ${STATS[stat]["base_stat"]}, Effort: ${STATS[stat]["effort"]}`
+            loop2++;
 
             const ESTATS = STATS[stat]["stat"];
 
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${ESTATS["name"]}`
-            LIST.appendChild(ITEM);
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `Stat: ${ESTATS["name"]}`
+            P3.appendChild(ITEM);
 
             ARTICLE.appendChild(P1)
             ARTICLE.appendChild(P2)
             ARTICLE.appendChild(P3)
-            ARTICLE.appendChild(LIST)
+            ARTICLE.appendChild(BR)
 
             section2.appendChild(ARTICLE)
         }
@@ -351,20 +333,20 @@ if (page == "charmeleon.html") {
             const ARTICLE = document.createElement("article")
             const P1 = document.createElement("p")
             const P2 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const P3 = document.createElement("p")
 
-            P1.textContent = `slot: ${TYPES[type]["slot"]}`
-            P2.textContent = `type:`
+            P1.textContent = `Type 1`
+            P2.textContent = `slot: ${TYPES[type]["slot"]}`
 
             const NAME = TYPES[type]["type"];
 
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${NAME["name"]}`
-            LIST.appendChild(ITEM);
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `type: ${NAME["name"]}`
+            P3.appendChild(ITEM);
 
             ARTICLE.appendChild(P1)
             ARTICLE.appendChild(P2)
-            ARTICLE.appendChild(LIST)
+            ARTICLE.appendChild(P3)
 
             section3.appendChild(ARTICLE)
         }
@@ -477,17 +459,18 @@ if (page == "charizard.html") {
 
         for (ability in ABILITIES) {
             const ARTICLE = document.createElement("article")
-            const H2 = document.createElement("h2")
             const P1 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const P2 = document.createElement("p")
 
-            H2.textContent = ABILITIES[ability]["abilities"];
-            P1.textContent = `abilities: ${ABILITIES[ability]["name"]}`
+            P2.textContent = `ABILITY ${loop}`
+            loop++;
 
-            ARTICLE.appendChild(H2)
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `name: ${ABILITIES[ability]["name"]}`
+            P2.appendChild(ITEM);
+
             ARTICLE.appendChild(P1)
-            ARTICLE.appendChild(LIST)
-
+            ARTICLE.appendChild(P2)
             section1.appendChild(ARTICLE)
         }
     }
@@ -500,22 +483,22 @@ if (page == "charizard.html") {
             const P1 = document.createElement("p")
             const P2 = document.createElement("p")
             const P3 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const BR = document.createElement("br")
 
-            P1.textContent = `base stat: ${STATS[stat]["base_stat"]}`
-            P2.textContent = `effort: ${STATS[stat]["effort"]}`
-            P3.textContent = `stat:`
+            P1.textContent = `Stat ${loop2}`
+            P2.textContent = `Base Stat: ${STATS[stat]["base_stat"]}, Effort: ${STATS[stat]["effort"]}`
+            loop2++;
 
             const ESTATS = STATS[stat]["stat"];
 
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${ESTATS["name"]}`
-            LIST.appendChild(ITEM);
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `Stat: ${ESTATS["name"]}`
+            P3.appendChild(ITEM);
 
             ARTICLE.appendChild(P1)
             ARTICLE.appendChild(P2)
             ARTICLE.appendChild(P3)
-            ARTICLE.appendChild(LIST)
+            ARTICLE.appendChild(BR)
 
             section2.appendChild(ARTICLE)
         }
@@ -528,24 +511,22 @@ if (page == "charizard.html") {
             const ARTICLE = document.createElement("article")
             const P1 = document.createElement("p")
             const P2 = document.createElement("p")
-            const LIST = document.createElement("ul")
+            const P3 = document.createElement("p")
 
-            P1.textContent = `slot: ${TYPES[type]["slot"]}`
-            P2.textContent = `type:`
+            P1.textContent = `Type 1`
+            P2.textContent = `slot: ${TYPES[type]["slot"]}`
 
             const NAME = TYPES[type]["type"];
 
-            const ITEM = document.createElement("li");
-            ITEM.textContent = `name: ${NAME["name"]}`
-            LIST.appendChild(ITEM);
+            const ITEM = document.createElement("p");
+            ITEM.textContent = `type: ${NAME["name"]}`
+            P3.appendChild(ITEM);
 
             ARTICLE.appendChild(P1)
             ARTICLE.appendChild(P2)
-            ARTICLE.appendChild(LIST)
+            ARTICLE.appendChild(P3)
 
             section3.appendChild(ARTICLE)
         }
     }
 }
-
-

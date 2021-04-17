@@ -11,12 +11,7 @@ body {
   background-image: url("pokebackground.png");
   background-repeat: no-repeat;
   background-size: 100%;
-<<<<<<< HEAD
-  overflow: hidden;
-  text-align: center;
-=======
   font-family: 'Press Start 2P', cursive;
->>>>>>> a84997b4a39d330193bc1f91730ce8b6c9a39927
 }
 
 .flip-card {
@@ -95,11 +90,12 @@ a:active {
 
 .containerA {
   text-align: center;
-  margin-top: 4%;
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 4%;
+  margin-top: 2%;
   font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
 }
 
 #img {
