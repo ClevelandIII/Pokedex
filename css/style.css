@@ -7,6 +7,16 @@ img {
   width: 500px;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
 body {
   background-image: url("pokebackground.png");
   background-repeat: no-repeat;
@@ -90,11 +100,12 @@ a:active {
 
 .containerA {
   text-align: center;
-  margin-top: 4%;
   margin-left: 4%;
   margin-right: 4%;
   margin-bottom: 4%;
+  margin-top: 2%;
   font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
 }
 
 #img {
