@@ -20,3 +20,9 @@ Jimmy worked on the homepage
 Cleveland worked on the homepage and the pokemon
 Issac worked on the pokemon
 Hayden worked on the homepage
+
+4-16-2021
+Jimmy worked on formatting and a page bar
+Cleveland worked on the pokemon formatting and info
+Issac worked on formatting and the pokemon
+Hayden added the font
