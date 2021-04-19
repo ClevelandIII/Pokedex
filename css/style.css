@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  background-image: url("pokebackground.png");
+  background-image: url("xp.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   font-family: 'Press Start 2P', cursive;
@@ -110,8 +110,9 @@ a:active {
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;
   border-radius: 10%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#e0e000), color-stop(#e29300), to(#e40000));
-  background-image: linear-gradient(to bottom right, #e0e000, #e29300, #e40000);
+  background-image: url("pokebackground.png");
+  background-size: 100%;
+  color: #5a5a5a;
 }
 
 #text {

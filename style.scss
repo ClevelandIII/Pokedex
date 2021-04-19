@@ -15,7 +15,7 @@ img {
 
 
 body {
-    background-image: url("pokebackground.png");
+    background-image: url("xp.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Press Start 2P', cursive;
@@ -99,7 +99,9 @@ a {
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
     border-radius: 10%;
-    background-image: linear-gradient(to bottom right, rgb(224, 224, 0), rgb(226, 147, 0), rgb(228, 0, 0));
+    background-image: url("pokebackground.png");
+    background-size: 100%;
+    color: rgb(90, 90, 90);
 }
 
 #text{
