@@ -15,7 +15,7 @@ img {
 
 
 body {
-    background-image: url("xp.jpg");
+    background-image: url("volcano.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Press Start 2P', cursive;
@@ -54,6 +54,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
+    color: white;
 }
 
 .flip-card-back {
@@ -75,19 +76,19 @@ body {
 a {
     font-family: 'Press Start 2P', cursive;
     &:link {
-        color: black;
+        color: white;
     }
 
     &:visited {
-        color: black;
+        color: white;
     }
 
     &:hover {
-        color: black;
+        color: white;
     }
 
     &:active {
-        color: black;
+        color: white;
     }
 }
 
