@@ -1,5 +1,6 @@
 html{
     font-family: 'Press Start 2P', cursive;
+    cursor: url(Pokecur.png), pointer;
 }
 
 img {
@@ -73,6 +74,7 @@ body {
 }
 
 a {
+    cursor: url(Pokecur.png), pointer;
     font-family: 'Press Start 2P', cursive;
     &:link {
         color: black;
