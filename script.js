@@ -8,6 +8,7 @@ for (i in path) {
 }
 let loop = 1;
 let loop2 = 1;
+let loop3 = 1;
 
 //////////////////////////////////////////////////////////////////////CHARMANDER
 
@@ -513,8 +514,9 @@ if (page == "charizard.html") {
             const P2 = document.createElement("p")
             const P3 = document.createElement("p")
 
-            P1.textContent = `Type 1`
+            P1.textContent = `Type ${loop3}`
             P2.textContent = `slot: ${TYPES[type]["slot"]}`
+            loop3++;
 
             const NAME = TYPES[type]["type"];
 
