@@ -1,5 +1,5 @@
-html{
-    font-family: 'Press Start 2P', cursive;
+html {
+    font-family: "Press Start 2P", cursive;
 }
 
 img {
@@ -7,18 +7,17 @@ img {
     width: 500px;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-
 body {
     background-image: url("volcano.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
 .flip-card {
@@ -34,7 +33,7 @@ body {
     text-align: center;
     transition: transform 1.5s;
     transform-style: preserve-3d;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -48,8 +47,8 @@ body {
     text-align: center;
 }
 
-.flip-card-front p{
-    font-family: 'Press Start 2P', cursive;
+.flip-card-front p {
+    font-family: "Press Start 2P", cursive;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -66,15 +65,19 @@ body {
 .container {
     margin-top: 9%;
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
 }
 
-#lower{
+#lower {
     margin-top: 2%;
 }
 
 a {
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
+    &:hover {
+        color: white;
+    }
+
     &:link {
         color: white;
     }
@@ -83,21 +86,17 @@ a {
         color: white;
     }
 
-    &:hover {
-        color: white;
-    }
-
     &:active {
         color: white;
     }
 }
 
-.containerA{
+.containerA {
     text-align: center;
     margin-left: 4%;
     margin-right: 4%;
     margin-bottom: 4%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     font-size: 10px;
     border-radius: 10%;
     background-image: url("pokebackground.png");
@@ -105,15 +104,10 @@ a {
     color: #5a5a5a;
 }
 
-#text{
-    border-left: 2px solid #000000;
-    border-right: 2px solid #000000;
-}
-
-#hr{
+#hr {
     border: 1px solid #000000;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
