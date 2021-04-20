@@ -1,5 +1,6 @@
 html {
   font-family: 'Press Start 2P', cursive;
+  cursor: url("img/firecursornew..png"), pointer;
 }
 
 img {
@@ -19,6 +20,7 @@ img {
 
 body {
   background-image: url("volcano.jpg");
+  cursor: url("img/firecursornew..png"), pointer;
   background-repeat: no-repeat;
   background-size: 110%;
   font-family: 'Press Start 2P', cursive;
