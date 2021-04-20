@@ -532,3 +532,5 @@ if (page == "charizard.html") {
         }
     }
 }
+
+//make sure to add new tech
