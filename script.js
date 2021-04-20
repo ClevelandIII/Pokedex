@@ -83,6 +83,8 @@ if (page == "charmander.html") {
         "weight": 85
     }
 
+    const { name: n, stats: newS, abilities: abl, types: t, base_experience: b, height: h, id, is_default: is, order, weight} = charmander;
+
     let header = document.getElementById("headerCMD");
     let section1 = document.getElementById("section1CMD");
     let section2 = document.getElementById("section2CMD");
@@ -95,13 +97,12 @@ if (page == "charmander.html") {
     createSection2(superObj);
     createSection3(superObj);
 
-    function createHeader(obj) {
+    function createHeader() {
         const H1 = document.createElement("h1");
-        H1.textContent = obj.name
+        H1.textContent = n;
         header.appendChild(H1);
-
         const PARA = document.createElement("p")
-        PARA.textContent = `base exprience: ${obj["base_experience"]}, height: ${obj["height"]}, id: ${obj["id"]}, default: ${obj["is_default"]}, order: ${obj["order"]}, weight: ${obj["weight"]}`
+        PARA.textContent = JSON.stringify(`Base Experience: ${b}, Height: ${h}, Id: ${id}, Is Default: ${is}, Order ${order}, Weight ${weight}`)
         header.appendChild(PARA);
     }
 
@@ -255,6 +256,8 @@ if (page == "charmeleon.html") {
         "weight": 190
     }
 
+    const { name: n, stats: newS, abilities: abl, types: t, base_experience: b, height: h, id, is_default: is, order, weight} = charmeleon;
+
     let header = document.getElementById("headerCMO");
     let section1 = document.getElementById("section1CMO");
     let section2 = document.getElementById("section2CMO");
@@ -267,13 +270,12 @@ if (page == "charmeleon.html") {
     createSection2(superObj);
     createSection3(superObj);
 
-    function createHeader(obj) {
+    function createHeader() {
         const H1 = document.createElement("h1");
-        H1.textContent = obj.name
+        H1.textContent = n;
         header.appendChild(H1);
-
         const PARA = document.createElement("p")
-        PARA.textContent = `base exprience: ${obj["base_experience"]}, height: ${obj["height"]}, id: ${obj["id"]}, default: ${obj["is_default"]}, order: ${obj["order"]}, weight: ${obj["weight"]}`
+        PARA.textContent = JSON.stringify(`Base Experience: ${b}, Height: ${h}, Id: ${id}, Is Default: ${is}, Order ${order}, Weight ${weight}`)
         header.appendChild(PARA);
     }
 
@@ -433,6 +435,8 @@ if (page == "charizard.html") {
         "weight": 905
     }
 
+    const { name: n, stats: newS, abilities: abl, types: t, base_experience: b, height: h, id, is_default: is, order, weight} = charizard;
+
     let header = document.getElementById("headerCIZ");
     let section1 = document.getElementById("section1CIZ");
     let section2 = document.getElementById("section2CIZ");
@@ -445,13 +449,12 @@ if (page == "charizard.html") {
     createSection2(superObj);
     createSection3(superObj);
 
-    function createHeader(obj) {
+    function createHeader() {
         const H1 = document.createElement("h1");
-        H1.textContent = obj.name
+        H1.textContent = n;
         header.appendChild(H1);
-
         const PARA = document.createElement("p")
-        PARA.textContent = `base exprience: ${obj["base_experience"]}, height: ${obj["height"]}, id: ${obj["id"]}, default: ${obj["is_default"]}, order: ${obj["order"]}, weight: ${obj["weight"]}`
+        PARA.textContent = JSON.stringify(`Base Experience: ${b}, Height: ${h}, Id: ${id}, Is Default: ${is}, Order ${order}, Weight ${weight}`)
         header.appendChild(PARA);
     }
 
@@ -532,5 +535,3 @@ if (page == "charizard.html") {
         }
     }
 }
-
-//make sure to add new tech
